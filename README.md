@@ -2,7 +2,7 @@
 
 ## Description
 
-This script automatically creates a Makefile for your project. Currently it only supports C/C++/C#, but I will extend it in the future to support other languages.
+This script automatically creates a Makefile for your project. Currently it only supports C/C++/C#, but I will extend it in the future to support other languages. The bulk of the logic which I coded is in ECEditor. 
 
 ## Usage
 
