@@ -1,0 +1,21 @@
+#!/bin/bash
+
+prefix="/usr/local"
+name="createmf"
+
+UnInstall()
+{
+  echo "Uninstalling $1 ...";
+  if rm -f $prefix/bin/$1 > /dev/null 2>&1;
+  then
+    echo "Successfully uninstalled.";
+  else
+    echo "Cannot uninstall script. Try uninstalling the script as sudo."
+    exit 1;
+  fi
+}
+
+read -p "Do you want to uninstall $name? [Y/n] " answer;
+case $answer in
+  [Yy]* ) UnInstall $name;
+esac
